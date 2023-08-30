@@ -335,12 +335,21 @@ accent color:
   .promo__block {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 720px; }
+    grid-template-rows: 100vh; }
+    .promo__block-pages {
+      grid-template-columns: 1fr 1.5fr;
+      grid-template-rows: 90vh; }
   .promo__text {
-    margin: 77px 60px;
+    margin: 77px 66px;
     padding: 60px 50px 40px 40px; }
+    .promo__text-pages {
+      margin: 0 auto;
+      padding: 0;
+      align-self: center; }
   .promo__img {
     background: url(../img/bg-1.png) center center/cover no-repeat; }
+    .promo__img-page {
+      background: url(../img/projects-4.jpg) center center/cover no-repeat; }
 
 .preview {
   margin: 100px auto; }
@@ -986,44 +995,41 @@ accent color:
   .projects_page__card:hover, .projects_page__card-body {
     height: 60%; }
 
-.pages {
-  background-color: #F7F7F7; }
-  @media (max-width: 1024px) {
-    .pages {
-      padding: 20px 50px; } }
-  @media (max-width: 768px) {
-    .pages {
-      padding: 20px 10px; } }
-  .pages__wrapper {
-    padding: 80px 16px; }
-    @media (max-width: 1024px) {
-      .pages__wrapper {
-        padding: 20px 10px; } }
-  .pages__block {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px; }
-    .pages__block-odd {
-      background-color: #fff;
-      padding: 10px; }
-  .pages__img {
-    float: left;
-    max-width: 379px;
-    width: 100%;
-    padding-bottom: 20px;
-    padding-right: 20px;
-    z-index: 10; }
-    @media (max-width: 1024px) {
-      .pages__img {
-        max-width: 330px; } }
-  .pages__descr {
-    padding: 0 100px;
-    text-align: justify;
-    background-color: #ac0909;
-    z-index: 10; }
+.pages__block {
+  background-color: #CEC4BC;
+  padding: 80px 120px 40px 80px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 35vh; }
+  .pages__block-odd {
+    background-color: #fff;
+    padding: 10px; }
+  .pages__block--img {
+    position: relative;
+    background-color: #fff;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 0; }
 
-.pages:not(.pages__block-odd) {
-  padding: 20px 100px 0 100px; }
+.pages__descr {
+  overflow: hidden;
+  width: 90%; }
+
+.pages__img {
+  display: inline-block;
+  max-width: 90%;
+  margin: 0 auto;
+  z-index: 1000; }
+
+.pages__img::before {
+  content: "";
+  width: 100%;
+  height: 10px;
+  background-color: #645C55;
+  border-bottom: solid 10px #645C55;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100; }
