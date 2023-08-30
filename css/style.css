@@ -71,6 +71,10 @@ body {
   line-height: 38px;
   color: #403E3B;
   font-weight: 400; }
+  @media (max-width: 576px) {
+    .heading-secondary {
+      font-size: 28px;
+      line-height: 32px; } }
   .heading-secondary-white {
     color: #fff; }
 
@@ -79,6 +83,10 @@ body {
   font-weight: 400;
   line-height: 42px;
   color: #403E3B; }
+  @media (max-width: 576px) {
+    .heading-trinity {
+      font-size: 32px;
+      line-height: 32px; } }
 
 .paragraph {
   font-size: 16px;
@@ -337,7 +345,7 @@ accent color:
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 100vh; }
     .promo__block-pages {
-      grid-template-columns: 1fr 1.5fr;
+      grid-template-columns: 1fr 1fr;
       grid-template-rows: 90vh; }
   .promo__text {
     margin: 77px 66px;
@@ -995,41 +1003,42 @@ accent color:
   .projects_page__card:hover, .projects_page__card-body {
     height: 60%; }
 
-.pages__block {
-  background-color: #CEC4BC;
-  padding: 80px 120px 40px 80px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 35vh; }
-  .pages__block-odd {
-    background-color: #fff;
-    padding: 10px; }
-  .pages__block--img {
-    position: relative;
-    background-color: #fff;
+.pages {
+  position: relative; }
+  .pages__block {
+    padding: 80px 80px 40px 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 40vh; }
+    .pages__block-odd {
+      background-color: #fff;
+      padding: 10px; }
+    .pages__block--img {
+      background-color: #fff;
+      display: block;
+      margin: 0 auto; }
+    .pages__block--text {
+      padding: 0 80px 40px 80px; }
+  .pages__descr {
+    overflow: hidden;
+    width: 90%;
+    align-self: center;
+    justify-self: end; }
+  .pages__img {
     display: block;
-    margin: 0 auto;
-    padding-bottom: 0; }
-
-.pages__descr {
-  overflow: hidden;
-  width: 90%; }
-
-.pages__img {
-  display: inline-block;
-  max-width: 90%;
-  margin: 0 auto;
-  z-index: 1000; }
-
-.pages__img::before {
-  content: "";
-  width: 100%;
-  height: 10px;
-  background-color: #645C55;
-  border-bottom: solid 10px #645C55;
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 100; }
+    max-width: 70%;
+    margin: 0 auto; }
+  .pages__line {
+    position: relative;
+    z-index: 1000; }
+  .pages__line::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #645C55;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -2; }
