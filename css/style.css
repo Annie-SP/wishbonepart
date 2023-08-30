@@ -61,6 +61,10 @@ body {
   font-weight: 400;
   line-height: 70px;
   color: #1B1A1A; }
+  @media (max-width: 576px) {
+    .heading-primary {
+      font-size: 38px;
+      line-height: 40px; } }
 
 .heading-secondary {
   font-size: 32px;
@@ -709,9 +713,12 @@ accent color:
       text-align: center; }
   .featured {
     padding: 0 20px; }
+    .featured__list {
+      grid-template-columns: repeat(2, 300px);
+      grid-auto-columns: minmax(375px, auto); }
     .featured__items {
-      width: 240px;
-      height: 290px; }
+      width: 100%;
+      height: 100%; }
     .featured__title {
       font-size: 32px;
       line-height: 38px;
@@ -763,6 +770,8 @@ accent color:
     line-height: 40px; }
   .promo__descr {
     font-size: 12px; }
+  .process__items {
+    width: 80%; }
   .preview__wrapper {
     flex-direction: column;
     padding: 0 20px; }
@@ -785,7 +794,9 @@ accent color:
     .projects__descr_right, .projects__descr_left {
       background-color: rgba(255, 255, 255, 0.589); }
   .clients {
-    padding: 60px 20px; }
+    padding: 60px 10px; }
+    .clients__block {
+      gap: 20px; }
     .clients__descr {
       font-size: 12px; }
     .clients__list {
@@ -794,51 +805,57 @@ accent color:
     .clients__report {
       padding: 0;
       text-align: center; }
-  .featured__list {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px; }
-  .featured__items {
-    width: 320px;
-    height: 390px; }
-  .featured__title {
-    font-size: 30px;
-    line-height: 40px;
-    text-align: center; }
-  .featured__subtitle {
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center; }
-  .featured__desc_button {
-    left: 20px; }
+  .featured {
+    padding: 0 10px; }
+    .featured__list {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      grid-template-columns: 375px;
+      grid-auto-columns: minmax(375px, auto);
+      gap: 10px; }
+    .featured__items {
+      width: 320px;
+      height: 390px; }
+    .featured__title {
+      font-size: 30px;
+      line-height: 40px;
+      text-align: center; }
+    .featured__subtitle {
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center; }
+    .featured__desc_button {
+      left: 20px; }
   .wrapper {
-    padding: 60px 20px; }
-  .team__block {
-    flex-direction: column; }
-  .team__title {
-    font-size: 30px;
-    line-height: 40px; }
-  .team__descr {
-    width: 100%; }
-  .team__preview {
-    margin-top: 36px;
-    gap: 36px; }
-  .touch__block {
-    flex-direction: column; }
-  .touch__desc {
-    width: 100%;
-    text-align: center; }
-  .touch__title {
-    font-size: 30px;
-    line-height: 40px; }
-  .touch__button {
-    margin-top: 20px; }
+    padding: 10px; }
+  .team {
+    padding: 0 10px; }
+    .team__block {
+      flex-direction: column; }
+    .team__title {
+      font-size: 30px;
+      line-height: 40px; }
+    .team__descr {
+      width: 100%; }
+    .team__preview {
+      margin-top: 36px;
+      gap: 36px; }
+  .touch {
+    padding: 15px 5px; }
+    .touch__block {
+      flex-direction: column; }
+    .touch__desc {
+      width: 100%;
+      text-align: center; }
+    .touch__title {
+      font-size: 30px;
+      line-height: 40px; }
+    .touch__button {
+      margin-top: 20px; }
   .footer {
-    padding: 60px 20px; }
+    padding: 15px 5px; }
     .footer__block {
-      flex-direction: column;
+      flex-direction: column !important;
       justify-content: center; }
     .footer__desc {
       margin-bottom: 10px; }
