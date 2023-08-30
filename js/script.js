@@ -13,3 +13,9 @@ const hamburger = document.querySelector('.hamburger'),
     });
 
 
+const btnTeam = document.querySelector('.team__button'),
+    teamPreview = document.querySelector('.team__preview');
+
+    btnTeam.addEventListener('click', () => {
+        teamPreview.classList.toggle('team__preview-open');
+    });

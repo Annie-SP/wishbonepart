@@ -802,27 +802,27 @@ accent color:
     .clients__report {
       padding: 0;
       text-align: center; }
-  .featured {
-    padding: 0 10px; }
-    .featured__list {
-      margin-top: 20px;
-      margin-bottom: 20px;
-      grid-template-columns: 375px;
-      grid-auto-columns: minmax(375px, auto);
-      gap: 10px; }
-    .featured__items {
-      width: 320px;
-      height: 390px; }
-    .featured__title {
-      font-size: 30px;
-      line-height: 40px;
-      text-align: center; }
-    .featured__subtitle {
-      font-size: 16px;
-      line-height: 20px;
-      text-align: center; }
-    .featured__desc_button {
-      left: 20px; }
+  .featured__list {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    grid-template-columns: 320px;
+    grid-auto-columns: minmax(320px, auto);
+    gap: 10px; }
+  .featured__items {
+    width: 320px;
+    height: 390px; }
+  .featured__text {
+    width: 95%; }
+  .featured__title {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center; }
+  .featured__subtitle {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center; }
+  .featured__desc_button {
+    left: 20px; }
   .wrapper {
     padding: 10px; }
   .team {
@@ -835,8 +835,12 @@ accent color:
     .team__descr {
       width: 100%; }
     .team__preview {
-      margin-top: 36px;
-      gap: 36px; }
+      display: none;
+      transition: all .3s; }
+      .team__preview-open {
+        display: block;
+        margin-top: 36px;
+        gap: 36px; }
   .touch {
     padding: 15px 5px; }
     .touch__block {
