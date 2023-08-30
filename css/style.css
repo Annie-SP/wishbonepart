@@ -978,7 +978,8 @@ accent color:
     transition: 1s;
     background-color: #1B1A1A;
     cursor: pointer; }
-  .projects_page__card:hover .projects_page__card-body::before {
+  .projects_page__card:hover .projects_page__card-body::before,
+  .projects_page__card:active .projects_page__card-body::before {
     content: "";
     width: 100%;
     background-color: transparent; }
