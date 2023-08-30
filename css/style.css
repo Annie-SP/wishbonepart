@@ -486,6 +486,8 @@ accent color:
     font-size: 15px;
     line-height: 24px;
     color: #645C55; }
+  .team__button {
+    display: none; }
   .team__preview {
     display: grid;
     grid-template-columns: repeat(2, minmax(250px, auto));
@@ -834,6 +836,8 @@ accent color:
       line-height: 40px; }
     .team__descr {
       width: 100%; }
+    .team__button {
+      display: block; }
     .team__preview {
       display: none;
       transition: all .3s; }
