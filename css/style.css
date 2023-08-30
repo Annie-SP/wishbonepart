@@ -828,7 +828,7 @@ accent color:
   .wrapper {
     padding: 10px; }
   .team {
-    padding: 0 10px; }
+    padding: 20px 10px; }
     .team__block {
       flex-direction: column; }
     .team__title {
