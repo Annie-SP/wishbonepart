@@ -285,7 +285,7 @@ body {
     padding: 80px 80px 40px 80px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 40vh;
+    grid-template-rows: auto;
     overflow: hidden; }
     .pages__block--img {
       background-color: #fff;
@@ -301,6 +301,8 @@ body {
         display: block;
         margin: 10px auto;
         width: 80%; }
+        .pages__block__item--img--small {
+          width: 60%; }
         .pages__block__item--img img {
           width: 100%; }
   .pages__descr {
