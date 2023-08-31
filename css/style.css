@@ -298,7 +298,9 @@ body {
     .pages__block__item {
       width: 100%; }
       .pages__block__item--img {
-        width: 60%; }
+        display: block;
+        margin: 10px auto;
+        width: 80%; }
         .pages__block__item--img img {
           width: 100%; }
   .pages__descr {
@@ -865,12 +867,13 @@ body {
     .team__preview {
       gap: 36px; }
   .pages__block {
-    padding: 10px 10px 5px 10px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr; }
     .pages__block--text {
       padding: 0  10px 20px 10px; }
+  .pages__descr {
+    width: 100%; }
   .pages__img {
     max-width: 100%; }
   .pages__line::after {
