@@ -345,8 +345,8 @@ accent color:
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 100vh; }
     .promo__block-pages {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 90vh; }
+      grid-template-rows: 90vh;
+      gap: 10px; }
   .promo__text {
     margin: 77px 66px;
     padding: 60px 50px 40px 40px; }
@@ -576,14 +576,22 @@ accent color:
     grid-template-columns: 1fr;
     grid-template-rows: 550px;
     margin: 0; }
+    .promo__block-pages {
+      grid-template-rows: 40vh; }
   .promo__text {
     order: 2;
     margin: 0;
     padding: 50px 20px 50px; }
+    .promo__text-pages {
+      margin: 0 auto;
+      padding: 0;
+      align-self: center; }
   .promo__img {
     padding: 0;
     order: 1;
     background: url(../img/bg-1-tab.png) center center/cover no-repeat; }
+    .promo__img-page {
+      background: url(../img/projects-4.jpg) center center/cover no-repeat; }
   .promo__title {
     font-size: 40px;
     line-height: 40px; }
@@ -620,7 +628,30 @@ accent color:
     .touch__title {
       font-size: 34px; }
   .footer {
-    padding: 50px 70px; } }
+    padding: 50px 70px; }
+  .pages__block {
+    padding: 40px 40px 20px 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr; }
+    .pages__block--text {
+      padding: 0  40px 20px 40px; }
+  .pages__img {
+    max-width: 85%; }
+  .pages__line {
+    position: relative;
+    z-index: 1000; }
+  .pages__line::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #645C55;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -2; } }
 
 @media (max-width: 768px) {
   .container {
@@ -753,7 +784,27 @@ accent color:
     .team__descr {
       width: 100%; }
     .team__preview {
-      gap: 36px; } }
+      gap: 36px; }
+  .pages__block {
+    padding: 10px 10px 5px 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr; }
+    .pages__block--text {
+      padding: 0  10px 20px 10px; }
+  .pages__img {
+    max-width: 100%; }
+  .pages__line::after {
+    content: "";
+    width: 100%;
+    height: 0;
+    background: #645C55;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -2; } }
 
 @media (max-width: 567px) {
   .container {
@@ -1010,9 +1061,6 @@ accent color:
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 40vh; }
-    .pages__block-odd {
-      background-color: #fff;
-      padding: 10px; }
     .pages__block--img {
       background-color: #fff;
       display: block;
@@ -1020,7 +1068,6 @@ accent color:
     .pages__block--text {
       padding: 0 80px 40px 80px; }
   .pages__descr {
-    overflow: hidden;
     width: 90%;
     align-self: center;
     justify-self: end; }
