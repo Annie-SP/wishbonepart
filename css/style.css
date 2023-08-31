@@ -775,10 +775,9 @@ body {
     .header_button {
       display: none; }
     .header__block {
-      justify-content: space-around;
       height: 70px;
       margin: 10px;
-      padding: 0 0; }
+      padding: 0; }
     .header__logo {
       width: 180px; }
     .header__nav {
