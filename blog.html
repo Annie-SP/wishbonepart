@@ -48,6 +48,39 @@
 
     <main> 
         <section class="projects_page">
+
+            <div class="pagination">
+                <button class="pagination__btn pagination__btn-prev">
+                  <svg 
+                      xmlns="http://www.w3.org/2000/svg" 
+                      fill="none" 
+                      viewBox="0 0 24 24" 
+                      stroke-width="1.5" 
+                      stroke="currentColor" 
+                      class="pagination__icon">
+                    <path stroke-linecap="round" 
+                          stroke-linejoin="round" 
+                          d="M15.75 19.5L8.25 12l7.5-7.5" />
+                  </svg>
+                </button>
+                <ul class="pagination__list">
+                   <li class="pagination__page-link pagination__page-link--current" onclick="activeLink()" value="1" >1
+                   </li> 
+                   <li class="pagination__page-link" onclick="activeLink()" value="2" >2</li> 
+                   <li value="3" class="pagination__page-link" onclick="activeLink()">3</li> 
+                   <li value="4" class="pagination__page-link" onclick="activeLink()">4</li> 
+                   <li value="5" class="pagination__page-link" onclick="activeLink()">5</li> 
+                   <li value="6" class="pagination__page-link" onclick="activeLink()">6</li> 
+                </ul>
+                
+                <button class="pagination__btn pagination__btn-next">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="pagination__icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                  </svg>
+               </button>
+                </div>
+
+
             <div class="projects_page__wrapper">
                 <h2 class="heading-secondary u-center-text">Featured projects</h2>                
                 <div class="projects_page__list">
@@ -187,13 +220,13 @@
                               d="M15.75 19.5L8.25 12l7.5-7.5" />
                       </svg>
                     </button>
-                    
                     <a href="#" class="pagination__page-link">1</a>
-                    <a href="#" class="pagination__page-link">2</a>
-                    <a href="#" class="pagination__page-link pagination__page-link--current">3</a>
-                    <a href="#" class="pagination__page-link">4</a>
-                    <span class="pagination__dots">...</span>
-                    <a href="#" class="pagination__page-link">11</a>
+                     <a href="#" class="pagination__page-link">2</a>
+                     <a href="#" class="pagination__page-link pagination__page-link--current">3</a>
+                     <a href="#" class="pagination__page-link">4</a>
+                     <span class="pagination__dots">...</span>
+                     <a href="#" class="pagination__page-link">11</a>
+                    
                     
                     <button class="pagination__btn">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="pagination__icon">
@@ -203,6 +236,12 @@
                     </div>
                   
             </div>
+
+
+
+           
+              
+        </div>
         </section> 
 
 

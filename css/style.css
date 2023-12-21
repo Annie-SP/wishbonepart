@@ -275,8 +275,10 @@ body {
   .projects_page__card:active .projects_page__card-body::before {
     content: "";
     width: 100%;
-    background-color: transparent; }
+    background-color: transparent;
+    position: absolute; }
   .projects_page__card:hover, .projects_page__card-body {
+    position: absolute;
     height: 60%; }
 
 .pages {
@@ -404,6 +406,12 @@ body {
   align-items: center;
   gap: 12px;
   margin-top: 100px; }
+  .pagination__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    list-style-type: none; }
   .pagination__btn {
     border: 1px solid #645C55;
     border-radius: 50%;
@@ -420,7 +428,7 @@ body {
     width: 24px;
     height: 24px;
     stroke: #645C55; }
-  .pagination__page-link:link, .pagination__page-link:visited {
+  .pagination__page-link, .pagination__page-link:visited {
     width: 36px;
     height: 36px;
     font-size: 18px;
@@ -430,7 +438,8 @@ body {
     border-radius: 50%;
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    cursor: pointer; }
   .pagination__page-link:hover, .pagination__page-link:active, .pagination__page-link.pagination__page-link--current {
     background-color: #645C55;
     color: rgba(255, 255, 255, 0.8); }
@@ -528,7 +537,7 @@ body {
 .process__img {
   margin: 0 auto;
   width: 117px;
-  height: 102px;
+  height: 117px;
   margin-bottom: 15px; }
   .process__img img {
     width: 100%; }
