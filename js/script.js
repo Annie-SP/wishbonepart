@@ -22,15 +22,3 @@ const btnTeam = document.querySelector('.team__button'),
     teamPreview.classList.toggle('team__preview-open');
     });
 
-
-let link = document.getElementsByClassName("pagination__page-link");
-let currentValue = 1;
-
-function activeLink(){
-    for (l of link){
-        l.classList.remove('pagination__page-link--current');
-    }
-
-    event.target.classList.add('pagination__page-link--current');
-    currentValue = event.target.value;
-};
